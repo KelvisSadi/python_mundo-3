@@ -1,4 +1,5 @@
-palavras = ('aprender', 'programar', 'linguagem', 'python', 'curso', 'gratis', 'estudar', 'praticar', 'trabalhar', 'mercado', 'programador', 'futuro')
+palavras = ('aprender', 'programar', 'linguagem', 'python', 'curso', 'gratis',
+            'estudar', 'praticar', 'trabalhar', 'mercado', 'programador', 'futuro')
 contador = 0
 vogais = ('a', 'e', 'i', 'o', 'u')
 contador_vogais = 0
