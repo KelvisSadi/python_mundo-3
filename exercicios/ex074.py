@@ -3,4 +3,8 @@ num = (randint(0, 10), randint(0, 10), randint(0, 10), randint(0, 10), randint(0
 print(f'Os valores sorteados foram: {num}')
 num_ordenado = sorted(num)
 print(f'O maior valor sorteado foi {num_ordenado[-1]}')
+# TAMBEM PODE UTILIZAR MAX()
+print(f'O maior valor sorteado foi {max(num)}')
+# TAMBEM PODE UTILIZAR MIN()
+print(f'O menor valor sorteado foi {min(num)}')
 print(f'O menor valor sorteado foi {num_ordenado[0]}')
