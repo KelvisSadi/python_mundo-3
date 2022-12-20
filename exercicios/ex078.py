@@ -1,22 +1,21 @@
 valores = list()
-for cont in range(5):
-    valores.append(int(input(f'Digite o {cont}º valor:')))
-print('=-'*30)
 maior = menor = 0
-for contador, valor in enumerate(valores):
-    if contador == 0:
-        menor = valor
-        maior = valor
-    if valor < menor:
-        menor = valor
-    if valor > maior:
-        maior = valor
+for cont in range(5):  # laço no range de 5 vezes
+    valores.append(int(input(f'Digite o {cont}º valor:')))
+    if cont == 0:  # se primeira vez
+        menor = valores[cont]
+        maior = valores[cont]
+    if valores[cont] < menor:  # se {valor} for menor que {menor}
+        menor = valores[cont]
+    if valores[cont] > maior:  # se {valor} for maior que {maior}
+        maior = valores[cont]
+print('=-'*30)
 print(f'Estes são valores digitados: {valores}')
 print(f'O maior valor digitado foi {maior} nas posições:', end=' ')
-for pos, item in enumerate(valores):
-    if item == maior:
+for pos, item in enumerate(valores):  # laço de cada {pos} e {item} em enumerado(valores)
+    if item == maior:  # se {item} for igual a {maior} faça
         print(f'{pos}...', end=' ')
 print(f'\nO menor valor digitado foi {menor} nas posições:', end=' ')
-for pos1, item2 in enumerate(valores):
-    if item2 == menor:
-        print(f'{pos1}...', end=' ')
+for pos, item in enumerate(valores):  # laço de casa {pos} e {item} em enumerado(valores)
+    if item == menor:  # se {item} igual a {menor} faça
+        print(f'{pos}...', end=' ')
