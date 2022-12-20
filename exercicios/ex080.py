@@ -12,8 +12,8 @@ for cont in range(5):  # laço de 5 vezes
             print(f'Adicionado na posição {contador} da lista...')
             print('-' * 30)
             break
-        elif cont != 0 and contador == len(lista) - 1:
-            # se não estiver na primeira passagem e contador igual ao último indice da lista
+        elif num > lista[-1]:
+            # se não se for maior que o último elemento da lista
             lista.append(num)
             print(f'Adicionado no final da lista ...')
             print('-' * 30)
